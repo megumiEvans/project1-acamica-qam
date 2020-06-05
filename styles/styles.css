@@ -1,0 +1,323 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400&family=IBM+Plex+Sans:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+body h1 {
+  font-family: "IBM Plex Sans";
+  font-size: 3em;
+  color: #060a24;
+  letter-spacing: 0.05em;
+  text-align: justify;
+}
+
+body h2 {
+  font-family: "IBM Plex Sans";
+}
+
+body p {
+  font-family: "IBM Plex Mono";
+}
+
+button {
+  font-family: "IBM Plex Sans";
+  text-transform: uppercase;
+  background-color: #00f3bb;
+  padding: 0.4% 4.1%;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: white;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-item a {
+  font-family: "IBM Plex Sans";
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.nav-item a:hover {
+  color: #00f3bb;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+/***************** Style: Intro Section *****************/
+.intro {
+  padding-top: 3.1%;
+  padding-left: 13.19%;
+  text-align: left;
+}
+
+#titledot {
+  color: #0000ec;
+}
+
+#titleX {
+  text-decoration: line-through;
+}
+
+#content-intro {
+  padding-top: 0.4%;
+  width: 40%;
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+#btn-intro {
+  padding-top: 1%;
+  padding-bottom: 10%;
+}
+
+/***************** END: Intro Section *****************/
+/**************** Style:  Episode Section ************/
+.episodes {
+  padding-bottom: 1.2%;
+  position: relative;
+}
+
+.episodes h2 {
+  font-family: "IBM Plex Sans";
+  color: white;
+  padding-top: 2%;
+  padding-left: 13.99%;
+  padding-bottom: 0.7%;
+}
+
+.episodes::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 120%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: -10;
+}
+
+.grid-col-2 {
+  /*background: peru;
+  border: 2px solid yellow;*/
+  padding-left: 10%;
+  padding-right: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid-col-2-items {
+  /*background: red;*/
+  width: "100%";
+  text-align: center;
+}
+
+.grid-col-2-items iframe {
+  width: 100%;
+}
+
+.origin-sec {
+  text-align: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.origin-sec p {
+  width: 89%;
+  font-size: 0.8em;
+}
+
+/**************** END Style:  Episode Section ************/
+/*************** De donde venimos Section ****************/
+#mobile-img {
+  top: -5;
+  border: medium;
+  width: 60% !important;
+  height: 60% !important;
+  z-index: 3;
+}
+
+/************* END De donde venimos Section **************/
+/************* Invitadas/os Estelares Section **************/
+.assintans-section {
+  padding-top: 1.6%;
+  padding-left: 13.99%;
+  padding-right: 10%;
+}
+
+.grid-col-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(320px, 1fr));
+}
+
+.grid-col-3-img {
+  /*background: yellow;*/
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  width: 100%;
+}
+
+/*********** Algunos temas Section ************/
+.grid-col-fit {
+  padding-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+}
+
+.grid-col-fit-img {
+  text-align: center;
+}
+
+.grid-col-fit-img p {
+  margin: 0 auto;
+  width: 60%;
+  font-weight: 600;
+}
+
+/*********** END: Algunos temas Section ************/
+/*************** Más novedades Section **************/
+#lastnews {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.blue-diagonal {
+  padding-bottom: 1.2%;
+  position: relative;
+}
+
+.blue-diagonal h2 {
+  font-family: "IBM Plex Sans";
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 0.7%;
+}
+
+.blue-diagonal:before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 200%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: -10;
+  padding-bottom: 5%;
+}
+
+.btn-news {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/********* END: Más novedades temas Section **********/
+footer {
+  padding-left: 5%;
+  padding-top: 5%;
+  background: white;
+  border: none;
+  z-index: 3;
+  height: 5em;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background: white;
+  }
+  body h1 {
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    text-align: left;
+    width: 80%;
+  }
+  #content-intro {
+    padding-top: 0.4%;
+    width: 90%;
+    font-size: 0.8em;
+    text-align: justify;
+  }
+  button {
+    width: 90%;
+    height: 3em;
+  }
+  .grid-col-2 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .grid-col-2-items iframe {
+    width: 70%;
+  }
+  .origin-sec {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: left;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-left: 15%;
+  }
+  .origin-sec p {
+    width: 80%;
+  }
+  .grid-col-3 {
+    -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    -webkit-column-gap: 0em;
+            column-gap: 0em;
+    row-gap: 0em;
+  }
+  .assintans-section {
+    padding-top: 10.6%;
+    padding-left: 3.99%;
+    padding-right: 10%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
