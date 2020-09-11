@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&display=swap');
+/// @type List
+$text-body:'IBM Plex Mono', monospace;
+/// @type List
+$text-title:'IBM Plex Sans', sans-serif;
+/// @type Color
+$colorh1:rgba(6,10,36,1);
+/// @type Color
+$colorh1dot:rgba(0,0,236,1);
+/// @type Color
+$color-btn-body: rgba(0,243,187,1);
+/// @type Color
+$btn-hover: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+/// @type Color
+$btn-hover-text: white;
+///  @type Color
+$section-blue:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+///  @type Color
+$color-active: #060A24;
+///  @type Color
+$color-navtext: black;
+$btn-hover: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+$h1-size: 36px;
+$h1-intro-fs: 50px; //h1 intro fullscreen
+$p-size:14px;
+$p-fs-size: 16px;
+
+$paddings-rl-desk:13.9%;

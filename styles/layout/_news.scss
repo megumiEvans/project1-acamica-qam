@@ -1,0 +1,92 @@
+/*************** Más novedades Section **************/
+#lastnews{
+    //border: 3px solid rgb(230, 64, 13);
+    text-align: center;
+    h1{
+        @include padding-mobile;
+        padding-top: 60px;
+        padding-bottom: 36px;
+        color: $btn-hover-text;
+        z-index: 10;
+    }
+    
+  }
+  /*.blue-diagonal{
+    border: 3px solid rgb(230, 64, 13);
+    padding-bottom:67px;
+    background: $section-blue;
+    @include padding-mobile;
+    position: relative;
+  }
+  
+  .blue-diagonal:before{
+    position: absolute;
+   content: "";
+   width: 100vw;
+   height: 20em;
+   top: 0;
+   left: 0;
+   background: $section-blue;
+   transform-origin: top left;
+   transform: skewY(-3deg);
+   z-index: -10;
+   //padding-bottom: 5%;
+   //clip-path: polygon(15% 0%, 100% 0%, 0% 100%, 100%);
+  } */
+
+  .blue-diagonal{
+    @include padding-mobile;
+    position: relative;
+    background-color: transparent;
+    padding-top: 5%;
+    padding-bottom: 20%;
+  }
+
+  .blue-diagonal::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 280px);
+      //height: 100%;
+      transform: translate(0px,-250px);
+      
+      //clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
+      clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+      z-index: -3;
+      background: $section-blue;
+    }
+  
+  
+  .btn-news{
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  @include bigmobile {
+    .blue-diagonal{
+      padding-bottom: 10%;
+    }
+  }
+
+  @include tablet {
+    .blue-diagonal::before{
+      padding-bottom: 8%;
+      height: calc(100% + 230px);
+      //transform: translate(0px,-230px);
+    }
+  }
+
+  @include desktop {
+  .blue-diagonal{
+      padding-bottom: 2%;
+  }
+  .blue-diagonal::before{
+    padding-bottom: 8%;
+    height: calc(100% + 60px);
+    transform: translate(0px,-160px);
+  }
+
+}
+  /********* END: Más novedades temas Section **********/

@@ -1,0 +1,32 @@
+/*********** Algunos temas Section ************/
+#moretopics{
+    padding-top: 10%;
+    padding-bottom: 20%;
+    @include padding-mobile;
+}
+.grid-col-fit{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+  }
+  
+.grid-col-fit-img{
+    text-align: center;
+    
+    p{
+      margin: 0 auto;
+      width: 60%;
+      font-weight: 600;
+    }
+}
+
+@include desktop {
+    #moretopics{
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+}
+  /*********** END: Algunos temas Section ************/
+
+  

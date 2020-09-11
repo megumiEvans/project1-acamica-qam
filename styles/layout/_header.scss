@@ -1,0 +1,202 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+$padding-head-topbot: 1em;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+
+header{
+    background: white;
+    @include padding-mobile;
+    padding-top: $padding-head-topbot;
+    padding-bottom: $padding-head-topbot;
+    position: fixed;
+    width:100%;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    //border: 1px solid salmon;
+    
+  }
+
+  #imageHeader{
+      width:7.5%;
+      height: 0.4%;
+  }
+
+  nav{
+    width: 100%;
+    background:$colorh1dot;
+    position: absolute;
+    text-align: right; //
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    
+    ul{
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li{
+      text-align: left;
+      margin-bottom: 1em;
+      width: 100%;
+    }
+    li:first-child{
+      padding-top: 2%;
+      //background: lightsalmon;
+    }
+
+    a{
+    
+      font-family: $text-title;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding-left: $padding-mob;
+      color: $btn-hover-text;
+    }
+    
+    a:hover{
+      color: $color-btn-body;
+      //letter-spacing: 0;
+      line-height: 28px;
+      text-decoration: line-through;
+    }
+    a:active{
+      text-decoration: line-through;
+      color: $color-active;
+      opacity: 0.56;
+    }
+    
+  }
+.nav-toggle{ //checkbox
+  display: none;
+}
+.nav-toggle:checked ~ nav{
+  //display: block;
+  transform: scale(1,1);
+}
+
+.nav-toggle-label{
+  position: absolute;
+  top:0;
+  right: $padding-mob;
+  /*margin-right: 1em para mobile*/
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+ // border: 1px solid salmon;
+  border: none;
+  width: 5.6%;
+  height: 100%;
+
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  display: block;
+  background: $color-navtext;
+  height: 2px;
+  width: 100%;
+  position: relative;
+
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+ 
+  position: absolute;
+  content: '';
+  z-index: 5;
+  
+}
+
+.nav-toggle-label span::before{
+  
+  bottom: 0.3em;
+  background: $color-navtext;
+}
+
+.nav-toggle-label span::after{
+  
+  top: 0.3em;
+  background: $color-navtext;
+}
+
+.nav-toggle:checked+.nav-toggle-label span{ //checkbox -> siblings
+  transform: rotate(135deg);
+  width:70%;
+}
+.nav-toggle:checked+.nav-toggle-label span::before,
+.nav-toggle:checked+.nav-toggle-label span::after{ //checkbox
+  top:0;
+  transform: rotate(90deg);
+}
+  @include bigmobile {
+    .nav-toggle-label{
+      
+      width: 3.5%;
+    }
+    #imageHeader{
+      width:4.5%;
+      height: 0.5%;
+      }
+  }
+
+  @include tablet {
+    .nav-toggle-label{
+      width: 2.8%;
+    }
+    #imageHeader{
+      width:3.80%;
+      height: 0.6%;
+      }
+  }
+//@media screen and (min-width:700px){
+  @include desktop { //translates into @media (min-width: 1024px)
+  header{
+    justify-content:space-between;
+    align-items: center;
+  }
+  .nav-toggle-label{
+    display:none;
+  }
+  nav{
+    all:unset; //resetear propiedades
+    width: 50%;
+    ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      /*background: darkgoldenrod;*/
+      width: 100%;
+    }
+    li{
+      display: inline;
+      padding-right: 3.3%;
+    }
+    li:first-child{
+      padding-top: 0;
+      //background: firebrick;
+    }
+    a{
+    
+      color: $colorh1;
+    }
+  }
+  
+  #imageHeader{
+    width:2.8%;
+    height: 0.9%;
+    }
+}

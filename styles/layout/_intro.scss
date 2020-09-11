@@ -1,0 +1,78 @@
+/***************** Style: Intro Section *****************/
+$padd-top-mobile: 15%;
+$padd-top-tablet: 10%;
+$padd-top-desktop: 8%;
+$padd-bot-mobile: 12%;
+$width-mob:100%;
+$width-desk:53%;
+$width-mob-h1:80%;
+$padd-mob-pintro:3%;
+section div.intro{
+  @include padding-mobile;
+}
+#title-inline{
+  //background: khaki;
+  display: block;
+}
+.intro{
+  @include padding-mobile;
+    padding-top: $padd-top-mobile;
+    text-align: left;
+    width: $width-mob;
+    padding-bottom: $padd-bot-mobile;
+    h1{
+      width: $width-mob-h1;
+      font-size: $h1-size;
+    }
+  }
+  #titledot{color:$colorh1dot;}
+  #titleX{text-decoration: line-through;}
+  
+  #content-intro{
+    padding-top: $padd-mob-pintro;
+    width: $width-mob;
+    font-size: $p-fs-size;
+    text-align: justify;
+  }
+  @include bigmobile{ 
+      #title-inline{
+        //background: khaki;
+        display: inline;
+      }
+  }
+
+  @include tablet { 
+    .intro{
+      padding-top: $padd-top-tablet;
+        padding-left: $paddings-rl-desk;
+        padding-right: $paddings-rl-desk;
+      }
+      #title-inline{
+        //background: khaki;
+        display: inline;
+      }
+  }
+
+ @include desktop { 
+    .intro{
+      padding-top: $padd-top-desktop;
+        padding-left: $paddings-rl-desk;
+        padding-right: $paddings-rl-desk;
+        /*background: palevioletred;
+        border: 3px solid rgb(230, 64, 13);*/
+        //border: 2px solid yellow;
+        h1{
+          font-size: $h1-intro-fs;
+        }
+      }
+    #content-intro{
+      width: $width-desk;
+      font-size: $p-fs-size;
+    }
+    #title-inline{
+      //background: khaki;
+      display: inline;
+    }
+
+  }
+  /***************** END: Intro Section *****************/

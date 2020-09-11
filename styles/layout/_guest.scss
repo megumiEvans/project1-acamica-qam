@@ -1,0 +1,38 @@
+/************* Invitadas/os Estelares Section **************/
+#assintans-section{
+    padding-top: 10%;
+    //background: fuchsia;
+    h1{
+        //padding-top: 1.6%;
+        //padding-left: 13.99%;
+        //padding-right: 10%;
+        @include padding-mobile;
+    }
+  }
+  .grid-col-3{
+    display: grid;
+    //background: lightseagreen;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 0em;
+    row-gap: 0em;
+  }
+  
+  .grid-col-3-img{
+    //background: yellow;
+    justify-self: stretch;
+    align-self: stretch;
+    width: 100%;
+   
+  }
+
+  @include desktop {
+    .grid-col-3{
+      grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+      
+    }
+    #assintans-section{
+      padding-top: 5%;
+    }
+}
+  /************* END: Invitadas/os Estelares Section **************/
+  

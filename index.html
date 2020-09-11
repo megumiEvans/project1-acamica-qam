@@ -4,64 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcast</title>
+    <script src="https://kit.fontawesome.com/6aa09f4ca4.js" crossorigin="anonymous"></script>
     <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
     <div>
         <header>
+            <img id="imageHeader" alt="icon-nav" src="images/logo.svg">
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
             <nav>
-                <div>
-                    <img id="imageHeader" alt="icon-nav" src="images/logo.svg">
-                </div>
                 <div class="nav-item">
-                    <a href="#">Episodios</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Entrevistas</a>
-                    <a href="#">Tópicos</a>
+                    <ul>
+                        <li><a href="#epis-origin">Episodios</a></li>
+                        <li><a href="#origin">Nosotros</a></li>
+                        <li><a href="#assintans-section">Entrevistas</a></li>
+                        <li><a href="#moretopics">Tópicos</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
-        <section>
-            <article class="intro">
-                <h1>Hello <span id="titleX">word</span> pale blue dot<span id="titledot">.</span></h1>
+        
+        <section class="intro">
+            <h1><a id="title-inline"> Hello<span id="titleX"> world </span></a>blue dot<span id="titledot">.</span></h1>
+            <div>
                 <p id="content-intro">
                     Un podcast que explora el mundo de la programación y la tecnología. Nuevos episodios,
                     todos los jueves cada 15 días.
                 </p>
                 <br/>
                 <div id="btn-intro">
-                    <button>
+                    <button class="btn-main">
                         Conocé más
                     </button>
                 </div>
-            </article>
+            </div>
         </section>
-        <section>
-            <article class="episodes">
-                <h2>Episodios</h2>
+        <section id="epis-origin">
+            <div class="episodes">
+                <h1 >Episodios</h1>
                 <div class="grid-col-2">
-                   
                     <div class="grid-col-2-items">
-                        <iframe src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt"  height="160" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                
+                        <iframe src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt"  height="160" allow="encrypted-media"></iframe>                
                     </div>
                     <div class="grid-col-2-items">
-                        <iframe src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt"  height="160" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                
+                        <iframe src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt"  height="160" allow="encrypted-media"></iframe>                
                     </div>
                     <div class="grid-col-2-items">
-                        <iframe src="https://open.spotify.com/embed/episode/3cWta1iiQSfvrdHaCbLkSD"  height="160" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                
+                        <iframe src="https://open.spotify.com/embed/episode/3cWta1iiQSfvrdHaCbLkSD"  height="160" allow="encrypted-media"></iframe>                
                     </div>
                     <div class="grid-col-2-items">
-                        <iframe src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ"  height="160" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>                
+                        <iframe src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ"  height="160" allow="encrypted-media"></iframe>                
                     </div>
-                    
                 </div>
-            </article>
-            <article class="grid-col-2">
-                <div class="grid-col-2-items">
-                    <img id="mobile-img" src="images/phone.png" alt="De donde venimos" style="width:100%">
-                </div> 
-                <div class="grid-col-2-items origin-sec">
-                    <h2>De dónde venimos</h2>
+            </div>
+        </section>
+        <section id="origin">
+            <div class="grid-col-2">
+                
+                <img  class="grid-col-2-img" src="images/phone.png" alt="De donde venimos">
+            
+                <div class="grid-col-2-text">
+                    <h1>De dónde venimos</h1>
                     <p>Our posturings, our imagined self-importance, the delusion that we have some privileged 
                         position in the Universe, challenged by this point of pale light.
                     </p>
@@ -70,26 +78,23 @@
                         all this vastness, there is no hint that help will come frome elsewhere to save us from ourselves.
                     </p>
                 </div>
-            </article>
+            </div>
         </section>
-        <section>
-            <h2 class="assintans-section">Invitadas/os Especiales</h2>
-            <article class="grid-col-3">
+        <section id="assintans-section">
+            <h1>Invitadas/os Especiales</h1>
+            <div class="grid-col-3">
                 
-                <img class="grid-col-3-img" src="images/grace-hopper.png" alt="invitada2">
-                <img class="grid-col-3-img" src="images/Katie-Bouman.png" alt="invitada3" >
-                <img class="grid-col-3-img" src="images/Margaret_Hamilton.png" alt="invitada4" >
-                <img class="grid-col-3-img" src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="invitada1">
-                <img class="grid-col-3-img"  src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" 
-                        alt="invitada5" style="width:100%">
-                
-                <img class="grid-col-3-img" src="images/susan-kare.png" alt="invitada6" style="width:100%">
-                
-            </article>
+                <img class="grid-col-3-img" src="images/grace-hopper.png" alt="grace-hopper">
+                <img class="grid-col-3-img" src="images/Katie-Bouman.png" alt="katie-bouman" >
+                <img class="grid-col-3-img" src="images/Margaret_Hamilton.png" alt="margaret-hamilton">
+                <img class="grid-col-3-img" src="images/Univac.png" alt="univac-women">
+                <img class="grid-col-3-img"  src="images/Eniac.png" alt="eniac-women" style="width:100%">
+                <img class="grid-col-3-img" src="images/susan-kare.png" alt="susan-kare" style="width:100%">
+            </div>
         </section>
-        <section>
-            <h2 class="assintans-section">Algunos de nuestros temas</h2>
-            <article class="grid-col-fit">
+        <section id="moretopics">
+            <h1>Algunos de nuestros temas</h1>
+            <div class="grid-col-fit">
                 <div class="grid-col-fit-img">
                     <img  src="images/icon1.svg" alt="trabajo remoto">
                     <p>Trabajo remoto</p>
@@ -103,23 +108,29 @@
                     <p>Bases del código</p>
                 </div>
                 <div class="grid-col-fit-img">
-                    <img class="grid-col-fit-img" src="images/icon4.svg" alt="invitada1">
+                    <img class="grid-col-fit-img" src="images/icon4.svg" alt="seguridad informática">
                     <p>Seguridad informática</p>
                 </div>
-            </article>
+            </div>
         </section>
         <section id="lastnews">
-            <article class="blue-diagonal">
-                <h2>¿Querés las últimas novedades?</h2>
-                <div id="btn-news">
-                    <button>
+            <h1>¿Querés las últimas novedades?</h1>
+            <div class="blue-diagonal">
+                
+                    <button class="btn-main">
                         Conocé más
                     </button>
                 </div>
-            </article>
         </section>
         <footer>
-            © 2019— Hello blue pale dot
+            <p>© 2019 — Hello blue pale dot</p>
+            <div>
+                <a href="https://www.spotify.com/mx/"><i class="fab fa-spotify" ></i></a>
+                <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://web.telegram.org/#/login"><i class="fab fa-telegram"></i></a>
+            </div>
         </footer>
     </div>
 </body>

@@ -1,0 +1,20 @@
+h1{
+    font-family: $text-title;
+    font-size: $h1-size;
+    line-height: 42px;
+    color: $colorh1;
+}
+
+p{
+    font-family: $text-body;
+    font-size:$p-fs-size;
+    color: $colorh1;
+}
+
+@include desktop {
+    
+    p{
+        font-size:$p-fs-size;
+
+    }
+}

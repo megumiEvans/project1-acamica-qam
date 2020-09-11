@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn-main{
+    font-family: $text-body;
+    font-weight: 600;
+    background: $color-btn-body;
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+    color: $colorh1;
+    height: 3em;
+}
+.btn-main:hover{
+    color:$btn-hover-text;
+    background-image: $btn-hover;
+}
+@include bigmobile { 
+    button{
+    width: 30%;
+    }
+}
+
+@include tablet { 
+    button{
+    width: 20%;
+    }
+}
+
+@include desktop { 
+    button{
+    width: 15.7%;
+    }
+}

@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer{
+    background: $btn-hover-text;
+    display:flex;
+    //flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    a{
+        color:$colorh1;
+        //background:salmon;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    p{
+        text-align: center;
+        flex-basis: 90%;
+        //background: seagreen;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        letter-spacing: -0.8px;
+        
+    }
+    div{
+        flex-basis: 100%;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        //background: darkcyan;
+        //border: 3px solid rgb(230, 64, 13);
+    }
+}
+
+@include desktop { 
+    //flex-flow: row nowrap;
+    footer{
+        all:unset; //resetear propiedades
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        div{
+            flex-basis: 50%;
+        }
+        p{
+            //background: rosybrown;
+            flex-basis: 30%;
+            text-align: left;
+            padding-top: 2.5%;
+            padding-bottom: 2.5%;
+            
+        }
+        a{
+            color:$colorh1;
+            //background:salmon;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
